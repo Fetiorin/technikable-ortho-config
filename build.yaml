@@ -19,4 +19,4 @@
 ---
 include:
   - board: technikable
-    shield: settings_reset
+#    shield: settings_reset
