@@ -110,10 +110,10 @@
         nav_layer {
             label = "Nav";
             bindings = <
-&kp ESC                    &none                  &none              &none            &none         &none                 &none   &kp TAB   &none      &none      &none      &kp DEL
-&nk LEFT_SHIFT LEFT_SHIFT  &nk LEFT_WIN LEFT_WIN  &nk LEFT_ALT LALT  &nk LCTRL LCTRL  &none         &none                 &none   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp BACKSPACE
-&bt BT_CLR                 &bt BT_SEL 0           &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4          &none   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
-                                                  &trans             &trans           &trans        &trans        &trans  &trans  &trans    &trans
+&kp ESC                    &none                  &none              &none            &none         &none                 &none        &kp TAB   &none      &none      &none      &kp DEL
+&nk LEFT_SHIFT LEFT_SHIFT  &nk LEFT_WIN LEFT_WIN  &nk LEFT_ALT LALT  &nk LCTRL LCTRL  &none         &none                 &none        &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp BACKSPACE
+&bt BT_CLR                 &bt BT_SEL 0           &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4          &bootloader  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
+                                                  &trans             &trans           &trans        &trans        &trans  &trans       &trans    &trans
             >;
         };
 
