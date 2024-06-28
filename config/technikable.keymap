@@ -34,12 +34,12 @@
 
         rbkt {
             bindings = <&kp RBKT>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
         };
 
         lbkt {
             bindings = <&kp LBKT>;
-            key-positions = <4 3>;
+            key-positions = <3 2>;
         };
 
         esc {
@@ -100,10 +100,10 @@
         base {
             label = "Base";
             bindings = <
-&kp Q  &kp W  &kp E     &kp R    &kp T            &kp GRAVE             &kp BSPC         &kp Y  &kp U      &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D     &kp F    &kp G            &mt LCTRL ESC         &kp SQT          &kp H  &kp J      &kp K      &kp L    &kp SEMI
-&kp Z  &kp X  &kp C     &kp V    &kp B            &kp BSLH              &kp RET          &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH
-              &kp LCMD  &sh 1 1  &mo_tap 1 SPACE  &none          &none  &sk RIGHT_SHIFT  &mo 2  &kp RCTRL
+&kp Q  &kp W  &kp E     &kp R    &kp T      &kp C_PREV           &kp C_NEXT       &kp Y  &kp U      &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D     &kp F    &kp G      &kp C_PAUSE          &kp C_MUTE       &kp H  &kp J      &kp K      &kp L    &kp SEMI
+&kp Z  &kp X  &kp C     &kp V    &kp B      &kp C_VOL_DN         &kp C_VOLUME_UP  &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH
+              &kp LCMD  &sh 1 1  &kp SPACE  &none         &none  &sk RIGHT_SHIFT  &mo 2  &kp RCTRL
             >;
         };
 
@@ -119,9 +119,9 @@
 
         symbols {
             bindings = <
-&kp EXCLAMATION  &kp AT            &kp HASH         &kp DOLLAR             &kp PERCENT        &trans          &trans  &kp LCTRL  &kp AMPERSAND  &kp ASTERISK  &kp UNDERSCORE  &trans
-&kp GRAVE        &kp TILDE         &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &trans          &trans  &trans     &nk RCTRL RCTRL &nk RALT RALT &nk RWIN RWIN &nk RSHIFT RSHIFT  
-&kp LESS_THAN    &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans          &trans  &kp PIPE   &kp MINUS      &kp PLUS      &kp EQUAL       &kp NON_US_BACKSLASH
+&kp EXCLAMATION  &kp AT            &kp HASH         &kp DOLLAR             &kp PERCENT        &trans          &trans  &kp LCTRL  &kp AMPERSAND    &kp ASTERISK   &kp UNDERSCORE  &trans
+&kp GRAVE        &kp TILDE         &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &trans          &trans  &trans     &nk RCTRL RCTRL  &nk RALT RALT  &nk RWIN RWIN   &nk RSHIFT RSHIFT
+&kp LESS_THAN    &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans          &trans  &kp PIPE   &kp MINUS        &kp PLUS       &kp EQUAL       &kp NON_US_BACKSLASH
                                    &trans           &trans                 &trans             &trans  &trans  &trans  &trans     &trans
             >;
 
@@ -130,10 +130,10 @@
 
         numbers {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5  &trans          &trans  &kp FSLH   &kp N7  &kp N8  &kp N9  &kp F12
+&kp F1                     &kp F2                 &kp F3             &kp F4           &kp F5  &trans          &trans  &kp FSLH   &kp N7  &kp N8  &kp N9  &kp F12
 &nk LEFT_SHIFT LEFT_SHIFT  &nk LEFT_WIN LEFT_WIN  &nk LEFT_ALT LALT  &nk LCTRL LCTRL  &kp F6  &trans          &trans  &kp EQUAL  &kp N4  &kp N5  &kp N6  &trans
-&kp F11  &kp F10  &kp F9  &kp F8  &kp F7  &trans          &trans  &kp N0     &kp N1  &kp N2  &kp N3  &kp DOT
-                  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
+&kp F11                    &kp F10                &kp F9             &kp F8           &kp F7  &trans          &trans  &kp N0     &kp N1  &kp N2  &kp N3  &kp DOT
+                                                  &trans             &trans           &trans  &trans  &trans  &trans  &trans     &trans
             >;
 
             label = "num";
