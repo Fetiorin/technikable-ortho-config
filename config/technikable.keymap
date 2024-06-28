@@ -13,6 +13,8 @@
 #define NUM_L 2
 #define SYM_L 3
 
+#define SK(KEY)     &nk KEY KEY
+
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 
 &lt { quick_tap_ms = <200>; };
@@ -120,7 +122,7 @@
         symbols {
             bindings = <
 &kp EXCLAMATION  &kp AT            &kp HASH         &kp DOLLAR             &kp PERCENT        &trans          &trans  &kp LCTRL  &kp AMPERSAND  &kp ASTERISK  &kp UNDERSCORE  &trans
-&kp GRAVE        &kp TILDE         &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &trans          &trans  &trans     &trans         &trans        &trans          &trans
+&kp GRAVE        &kp TILDE         &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &trans          &trans  &trans     SK(RCTRL)      SK(RALT)      SK(RWIN)        SK(RSHIFT)
 &kp LESS_THAN    &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans          &trans  &kp PIPE   &kp MINUS      &kp PLUS      &kp EQUAL       &kp NON_US_BACKSLASH
                                    &trans           &trans                 &trans             &trans  &trans  &trans  &trans     &trans
             >;
@@ -131,7 +133,7 @@
         numbers {
             bindings = <
 &kp F1   &kp F2   &kp F3  &kp F4  &kp F5  &trans          &trans  &kp FSLH   &kp N7  &kp N8  &kp N9  &kp F12
-&trans   &trans   &trans  &trans  &kp F6  &trans          &trans  &kp EQUAL  &kp N4  &kp N5  &kp N6  &trans
+SK(LEFT_SHIFT) SK(LEFT_WIN) SK(LALT) SK(LCTRL)  &kp F6  &trans          &trans  &kp EQUAL  &kp N4  &kp N5  &kp N6  &trans
 &kp F11  &kp F10  &kp F9  &kp F8  &kp F7  &trans          &trans  &kp N0     &kp N1  &kp N2  &kp N3  &kp DOT
                   &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
             >;
